@@ -1,0 +1,60 @@
+logging : 
+
+  verbosity : 3
+
+data:
+
+  evfile: binned_events.txt
+  scfile: spacecraft.fits
+  
+binning:
+
+  # Binning
+  roiwidth   : 15.0
+  npix       : null
+  binsz      : 0.1 # spatial bin size in deg
+  binsperdec : 8   # nb energy bins per decade
+  coordsys   : 'GAL'
+
+selection:
+
+  # Data selections
+  emin    : 100
+  emax    : 500000
+  zmax    : 90
+  evclass : 128
+  evtype  : 3
+  tmin    : 239557417
+  tmax    : 661205870 # 13 years
+  filter  : DATA_QUAL>0 && LAT_CONFIG==1
+  roicut : no
+  target : 'source_1'
+  # Set the ROI center to these coordinates
+  ra: 40.8071
+  dec: -24.8917
+
+gtlike:
+  # IRFs
+  edisp : True
+  irfs : 'P8R3_SOURCE_V2'
+  edisp_disable : ['isodiff','galdiff']
+
+# Settings for ROI model
+model:
+  # Include catalog sources within a box of width roisrc.
+  src_roiwidth : 20.0
+
+  galdiff  : 'gll_iem_v07.fits'
+  isodiff  : 'iso_P8R3_SOURCE_V3_v1.txt'
+
+  # List of catalogs to be used in the model.
+  catalogs : ['4FGL']
+
+  sources  :
+    - { name: 'source_1', ra : 40.8071, dec : -24.8917,
+        SpectrumType : 'PowerLaw', Index : {value: 2.0, scale : -1}, Scale : 100,
+        Prefactor : { value : 1.0, scale : !!float 1e-13, free : '1' },
+        SpatialModel: 'PointSource' }
+
+fileio:
+   outdir : data_out
