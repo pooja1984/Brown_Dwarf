@@ -9,9 +9,9 @@ In the Brown_Dwarf_notebook.ipynb notebook, we show the Fermi-LAT analysis for o
 Our calculation for DM capture rate where we assume that DM annihilates into long-lived mediators and finally to gamma rays, is available in the mathematica file, BD_formulation_plots.nb. 
 We perform this for the BDs but we can also extend it for any class of celestial objects. 
 
-Objective: To analyze Fermi-LAT data for 13 nearby Brown Dwarfs and investigate the DM capture rate in these celestial objects.
+# Objective: To analyze Fermi-LAT data for 13 nearby Brown Dwarfs and investigate the DM capture rate in these celestial objects.
 
-Key Components:
+# Key Components:
 
 Paper: The project is based on a published paper, which serves as the foundation for the research.
 
@@ -27,4 +27,4 @@ Methodology: The project seems to follow a methodology outlined in the provided 
 
 Scope: While the project focuses on Brown Dwarfs, it's mentioned that the methodology could potentially be extended to other classes of celestial objects, demonstrating versatility and applicability.
 
-This is a comprehensive scientific project that combines data analysis, code, and calculations to explore the DM capture rate in Brown Dwarfs and potentially other celestial objects. 
+# This is a comprehensive scientific project that combines data analysis, code, and calculations to explore the DM capture rate in Brown Dwarfs and potentially other celestial objects. 
