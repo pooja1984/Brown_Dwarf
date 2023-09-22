@@ -4,7 +4,7 @@ This project is based on the published paper, https://arxiv.org/abs/2211.08067. 
 
 We perform the 13 years of Fermi-LAT data of 13 nearby Brown Dwarf (BD) and look for the dark (DM) capture rate in BDs. 
 
-In the Brown_Dwarf_notebook.ipynb notebook, we show the Fermi-LAT analysis for one Brown Dwarf. Following this methodology, you can reproduce the result of all BDs. With sed_plots.ipynb, we can generate the spectral energy distribution (SED) plot (Fig.~1). We can generate the SED files (.npy) by following the analysis described in Brown_Dwarf_notebook.ipynb.
+In the Brown_Dwarf_notebook.ipynb notebook, we show the Fermi-LAT analysis for one Brown Dwarf. Following this methodology, we can reproduce the result of all BDs. With sed_plots.ipynb, we can generate the spectral energy distribution (SED) plot (Fig.~1). We can generate the SED files (.npy) by following the analysis described in Brown_Dwarf_notebook.ipynb.
 
 Our calculation for DM capture rate where we assume that DM annihilates into long-lived mediators and finally to gamma rays, is available in the mathematica file, BD_formulation_plots.nb. 
 We perform this for the BDs but we can also extend it for any class of celestial objects. 
